@@ -1,4 +1,5 @@
-﻿using System;
+﻿using buissnessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace SecurtiyProject
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox2.Text=clsEncoding.encoding(textBox1.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox3.Text=clsEncoding.decoding(textBox2.Text);
         }
     }
 }
