@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace SecurtiyProject
 {
-    public partial class Form1 : Form
+    public partial class MainScreen : Form
     {
-        public Form1()
+        public MainScreen()
         {
             InitializeComponent();
         }

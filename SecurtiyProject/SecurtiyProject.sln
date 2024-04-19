@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurtiyProject", "SecurtiyProject.csproj", "{AEC8993E-9C25-4C12-BE35-D7433331C256}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridEncrytion_PresentationLayer", "HybridEncrytion_PresentationLayer.csproj", "{AEC8993E-9C25-4C12-BE35-D7433331C256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "buissnessLayer", "..\buissnessLayer\buissnessLayer.csproj", "{CF8E4255-DD99-46F8-9684-272940B05AB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridEncrytion_BusinessLayer", "..\buissnessLayer\HybridEncrytion_BusinessLayer.csproj", "{CF8E4255-DD99-46F8-9684-272940B05AB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
