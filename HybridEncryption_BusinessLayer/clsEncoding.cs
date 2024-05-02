@@ -5,7 +5,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace buissnessLayer
+namespace HybridEncryption_BusinessLayer
 {
     public static class clsEncoding
     {

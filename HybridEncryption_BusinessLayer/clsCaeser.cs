@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace buissnessLayer
+namespace HybridEncryption_BusinessLayer
 {
     public static class clsCaeser
     {
@@ -49,5 +49,10 @@ namespace buissnessLayer
             return decryptedText;
 
         }
+
+        //public static string encrypt(string text1, string text2)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
