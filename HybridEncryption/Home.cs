@@ -184,4 +184,24 @@ public partial class Home : Form
 
         }
     }
+
+    private void btnDESGenerateKey_Click(object sender, EventArgs e)
+    {
+        txtKeyDES.Text = clsDES.genrateKey();
+    }
+
+    private void guna2Button2_Click(object sender, EventArgs e)
+    {
+        txtKeyDesFile.Text = clsDES.genrateKey();
+    }
+
+    private void guna2Button1_Click(object sender, EventArgs e)
+    {
+        txtKeyTripleDESFile.Text = clsTribleDES.genrateKey();
+    }
+
+    private void guna2Button8_Click(object sender, EventArgs e)
+    {
+        txtTripleKey.Text = clsTribleDES.genrateKey();
+    }
 }

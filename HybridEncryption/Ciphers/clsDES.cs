@@ -10,6 +10,16 @@ namespace HybridEncryption_PresentaionLayer;
 public class clsDES
 {
     //when i run my code to encypt file, it shows error says : 
+
+    public static string genrateKey()
+    {
+        using (var rng = new RNGCryptoServiceProvider())
+        {
+            byte[] key = new byte[6];
+            rng.GetBytes(key);
+            return Convert.ToBase64String(key);
+        }
+    }
     public static void EncryptFile(string inputFile, string outPutPath, string key)
     {
         using (DESCryptoServiceProvider provider = new DESCryptoServiceProvider())

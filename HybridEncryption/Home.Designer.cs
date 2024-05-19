@@ -144,9 +144,10 @@
             guna2TabControl1.Dock = DockStyle.Fill;
             guna2TabControl1.ItemSize = new Size(180, 40);
             guna2TabControl1.Location = new Point(0, 0);
+            guna2TabControl1.Margin = new Padding(4);
             guna2TabControl1.Name = "guna2TabControl1";
             guna2TabControl1.SelectedIndex = 0;
-            guna2TabControl1.Size = new Size(1137, 645);
+            guna2TabControl1.Size = new Size(1421, 806);
             guna2TabControl1.TabButtonHoverState.BorderColor = Color.Empty;
             guna2TabControl1.TabButtonHoverState.FillColor = Color.FromArgb(40, 52, 70);
             guna2TabControl1.TabButtonHoverState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
@@ -180,9 +181,10 @@
             tabPage4.Controls.Add(guna2HtmlLabel1);
             tabPage4.Controls.Add(txtDESDecryptedText);
             tabPage4.Location = new Point(184, 4);
+            tabPage4.Margin = new Padding(4);
             tabPage4.Name = "tabPage4";
-            tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(949, 637);
+            tabPage4.Padding = new Padding(4);
+            tabPage4.Size = new Size(1233, 798);
             tabPage4.TabIndex = 4;
             tabPage4.Text = "DES Text";
             tabPage4.UseVisualStyleBackColor = true;
@@ -196,10 +198,11 @@
             btnDESEncrypt.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnDESEncrypt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnDESEncrypt.ForeColor = Color.White;
-            btnDESEncrypt.Location = new Point(743, 565);
+            btnDESEncrypt.Location = new Point(929, 706);
+            btnDESEncrypt.Margin = new Padding(4);
             btnDESEncrypt.Name = "btnDESEncrypt";
             btnDESEncrypt.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnDESEncrypt.Size = new Size(171, 46);
+            btnDESEncrypt.Size = new Size(214, 58);
             btnDESEncrypt.TabIndex = 46;
             btnDESEncrypt.Text = "Encrypt";
             btnDESEncrypt.Click += btnDESEncrypt_Click;
@@ -213,10 +216,11 @@
             btnDESDecrypt.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnDESDecrypt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnDESDecrypt.ForeColor = Color.White;
-            btnDESDecrypt.Location = new Point(571, 565);
+            btnDESDecrypt.Location = new Point(714, 706);
+            btnDESDecrypt.Margin = new Padding(4);
             btnDESDecrypt.Name = "btnDESDecrypt";
             btnDESDecrypt.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnDESDecrypt.Size = new Size(171, 46);
+            btnDESDecrypt.Size = new Size(214, 58);
             btnDESDecrypt.TabIndex = 45;
             btnDESDecrypt.Text = "Decrypt";
             btnDESDecrypt.Click += btnDESDecrypt_Click;
@@ -232,22 +236,24 @@
             txtDESEncryptedText.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDESEncryptedText.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtDESEncryptedText.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDESEncryptedText.Location = new Point(148, 279);
+            txtDESEncryptedText.Location = new Point(185, 349);
+            txtDESEncryptedText.Margin = new Padding(4);
             txtDESEncryptedText.Multiline = true;
             txtDESEncryptedText.Name = "txtDESEncryptedText";
             txtDESEncryptedText.PasswordChar = '\0';
             txtDESEncryptedText.PlaceholderText = "";
             txtDESEncryptedText.SelectedText = "";
             txtDESEncryptedText.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtDESEncryptedText.Size = new Size(766, 111);
+            txtDESEncryptedText.Size = new Size(958, 139);
             txtDESEncryptedText.TabIndex = 31;
             // 
             // guna2HtmlLabel9
             // 
             guna2HtmlLabel9.BackColor = Color.Transparent;
-            guna2HtmlLabel9.Location = new Point(28, 431);
+            guna2HtmlLabel9.Location = new Point(35, 539);
+            guna2HtmlLabel9.Margin = new Padding(4);
             guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            guna2HtmlLabel9.Size = new Size(104, 22);
+            guna2HtmlLabel9.Size = new Size(122, 27);
             guna2HtmlLabel9.TabIndex = 30;
             guna2HtmlLabel9.Text = "Decrypted Text";
             // 
@@ -260,19 +266,22 @@
             btnDESGenerateKey.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnDESGenerateKey.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnDESGenerateKey.ForeColor = Color.White;
-            btnDESGenerateKey.Location = new Point(409, 50);
+            btnDESGenerateKey.Location = new Point(511, 62);
+            btnDESGenerateKey.Margin = new Padding(4);
             btnDESGenerateKey.Name = "btnDESGenerateKey";
             btnDESGenerateKey.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnDESGenerateKey.Size = new Size(119, 36);
+            btnDESGenerateKey.Size = new Size(149, 45);
             btnDESGenerateKey.TabIndex = 29;
             btnDESGenerateKey.Text = "Generate Key";
+            btnDESGenerateKey.Click += btnDESGenerateKey_Click;
             // 
             // guna2HtmlLabel6
             // 
             guna2HtmlLabel6.BackColor = Color.Transparent;
-            guna2HtmlLabel6.Location = new Point(28, 50);
+            guna2HtmlLabel6.Location = new Point(35, 62);
+            guna2HtmlLabel6.Margin = new Padding(4);
             guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            guna2HtmlLabel6.Size = new Size(27, 22);
+            guna2HtmlLabel6.Size = new Size(31, 27);
             guna2HtmlLabel6.TabIndex = 28;
             guna2HtmlLabel6.Text = "Key";
             // 
@@ -287,13 +296,14 @@
             txtKeyDES.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtKeyDES.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtKeyDES.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtKeyDES.Location = new Point(148, 50);
+            txtKeyDES.Location = new Point(185, 62);
+            txtKeyDES.Margin = new Padding(4);
             txtKeyDES.Name = "txtKeyDES";
             txtKeyDES.PasswordChar = '\0';
             txtKeyDES.PlaceholderText = "";
             txtKeyDES.SelectedText = "";
             txtKeyDES.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtKeyDES.Size = new Size(242, 36);
+            txtKeyDES.Size = new Size(302, 45);
             txtKeyDES.TabIndex = 27;
             // 
             // txtDESPlainText
@@ -307,31 +317,34 @@
             txtDESPlainText.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDESPlainText.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtDESPlainText.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDESPlainText.Location = new Point(148, 127);
+            txtDESPlainText.Location = new Point(185, 159);
+            txtDESPlainText.Margin = new Padding(4);
             txtDESPlainText.Multiline = true;
             txtDESPlainText.Name = "txtDESPlainText";
             txtDESPlainText.PasswordChar = '\0';
             txtDESPlainText.PlaceholderText = "";
             txtDESPlainText.SelectedText = "";
             txtDESPlainText.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtDESPlainText.Size = new Size(766, 111);
+            txtDESPlainText.Size = new Size(958, 139);
             txtDESPlainText.TabIndex = 24;
             // 
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Location = new Point(28, 127);
+            guna2HtmlLabel2.Location = new Point(35, 159);
+            guna2HtmlLabel2.Margin = new Padding(4);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(67, 22);
+            guna2HtmlLabel2.Size = new Size(77, 27);
             guna2HtmlLabel2.TabIndex = 22;
             guna2HtmlLabel2.Text = "Plain Text";
             // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Location = new Point(28, 279);
+            guna2HtmlLabel1.Location = new Point(35, 349);
+            guna2HtmlLabel1.Margin = new Padding(4);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(101, 22);
+            guna2HtmlLabel1.Size = new Size(119, 27);
             guna2HtmlLabel1.TabIndex = 23;
             guna2HtmlLabel1.Text = "Encrypted Text";
             // 
@@ -346,14 +359,15 @@
             txtDESDecryptedText.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDESDecryptedText.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtDESDecryptedText.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDESDecryptedText.Location = new Point(148, 431);
+            txtDESDecryptedText.Location = new Point(185, 539);
+            txtDESDecryptedText.Margin = new Padding(4);
             txtDESDecryptedText.Multiline = true;
             txtDESDecryptedText.Name = "txtDESDecryptedText";
             txtDESDecryptedText.PasswordChar = '\0';
             txtDESDecryptedText.PlaceholderText = "";
             txtDESDecryptedText.SelectedText = "";
             txtDESDecryptedText.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtDESDecryptedText.Size = new Size(766, 111);
+            txtDESDecryptedText.Size = new Size(958, 139);
             txtDESDecryptedText.TabIndex = 21;
             // 
             // tabPage6
@@ -367,9 +381,10 @@
             tabPage6.Controls.Add(txtKeyDesFile);
             tabPage6.Controls.Add(txtDesFileNamePath);
             tabPage6.Location = new Point(184, 4);
+            tabPage6.Margin = new Padding(4);
             tabPage6.Name = "tabPage6";
-            tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(949, 637);
+            tabPage6.Padding = new Padding(4);
+            tabPage6.Size = new Size(1233, 798);
             tabPage6.TabIndex = 6;
             tabPage6.Text = "DES File";
             tabPage6.UseVisualStyleBackColor = true;
@@ -383,10 +398,11 @@
             btnDesChooseFile.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnDesChooseFile.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnDesChooseFile.ForeColor = Color.White;
-            btnDesChooseFile.Location = new Point(756, 103);
+            btnDesChooseFile.Location = new Point(945, 129);
+            btnDesChooseFile.Margin = new Padding(4);
             btnDesChooseFile.Name = "btnDesChooseFile";
             btnDesChooseFile.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btnDesChooseFile.Size = new Size(125, 45);
+            btnDesChooseFile.Size = new Size(156, 56);
             btnDesChooseFile.TabIndex = 13;
             btnDesChooseFile.Text = "Choose File";
             btnDesChooseFile.Click += btnDesChooseFile_Click;
@@ -400,12 +416,14 @@
             guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(756, 176);
+            guna2Button2.Location = new Point(945, 220);
+            guna2Button2.Margin = new Padding(4);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Button2.Size = new Size(125, 45);
+            guna2Button2.Size = new Size(156, 56);
             guna2Button2.TabIndex = 12;
             guna2Button2.Text = "Generate Key";
+            guna2Button2.Click += guna2Button2_Click;
             // 
             // btnDesFileEncrypt
             // 
@@ -416,10 +434,11 @@
             btnDesFileEncrypt.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnDesFileEncrypt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnDesFileEncrypt.ForeColor = Color.White;
-            btnDesFileEncrypt.Location = new Point(459, 390);
+            btnDesFileEncrypt.Location = new Point(574, 488);
+            btnDesFileEncrypt.Margin = new Padding(4);
             btnDesFileEncrypt.Name = "btnDesFileEncrypt";
             btnDesFileEncrypt.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            btnDesFileEncrypt.Size = new Size(281, 52);
+            btnDesFileEncrypt.Size = new Size(351, 65);
             btnDesFileEncrypt.TabIndex = 11;
             btnDesFileEncrypt.Text = "Encrypt";
             btnDesFileEncrypt.Click += btnDesFileEncrypt_Click;
@@ -433,10 +452,11 @@
             btnDesFileDecrypt.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnDesFileDecrypt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnDesFileDecrypt.ForeColor = Color.White;
-            btnDesFileDecrypt.Location = new Point(159, 390);
+            btnDesFileDecrypt.Location = new Point(199, 488);
+            btnDesFileDecrypt.Margin = new Padding(4);
             btnDesFileDecrypt.Name = "btnDesFileDecrypt";
             btnDesFileDecrypt.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            btnDesFileDecrypt.Size = new Size(294, 52);
+            btnDesFileDecrypt.Size = new Size(368, 65);
             btnDesFileDecrypt.TabIndex = 10;
             btnDesFileDecrypt.Text = "Decrypt";
             btnDesFileDecrypt.Click += btnDesFileDecrypt_Click;
@@ -444,18 +464,20 @@
             // guna2HtmlLabel7
             // 
             guna2HtmlLabel7.BackColor = Color.Transparent;
-            guna2HtmlLabel7.Location = new Point(77, 189);
+            guna2HtmlLabel7.Location = new Point(96, 236);
+            guna2HtmlLabel7.Margin = new Padding(4);
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            guna2HtmlLabel7.Size = new Size(27, 22);
+            guna2HtmlLabel7.Size = new Size(31, 27);
             guna2HtmlLabel7.TabIndex = 9;
             guna2HtmlLabel7.Text = "Key";
             // 
             // guna2HtmlLabel8
             // 
             guna2HtmlLabel8.BackColor = Color.Transparent;
-            guna2HtmlLabel8.Location = new Point(77, 115);
+            guna2HtmlLabel8.Location = new Point(96, 144);
+            guna2HtmlLabel8.Margin = new Padding(4);
             guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            guna2HtmlLabel8.Size = new Size(59, 22);
+            guna2HtmlLabel8.Size = new Size(69, 27);
             guna2HtmlLabel8.TabIndex = 8;
             guna2HtmlLabel8.Text = "File Path";
             // 
@@ -470,13 +492,14 @@
             txtKeyDesFile.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtKeyDesFile.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtKeyDesFile.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtKeyDesFile.Location = new Point(159, 176);
+            txtKeyDesFile.Location = new Point(199, 220);
+            txtKeyDesFile.Margin = new Padding(4);
             txtKeyDesFile.Name = "txtKeyDesFile";
             txtKeyDesFile.PasswordChar = '\0';
             txtKeyDesFile.PlaceholderText = "";
             txtKeyDesFile.SelectedText = "";
             txtKeyDesFile.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            txtKeyDesFile.Size = new Size(581, 45);
+            txtKeyDesFile.Size = new Size(726, 56);
             txtKeyDesFile.TabIndex = 7;
             // 
             // txtDesFileNamePath
@@ -490,13 +513,14 @@
             txtDesFileNamePath.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDesFileNamePath.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtDesFileNamePath.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDesFileNamePath.Location = new Point(159, 103);
+            txtDesFileNamePath.Location = new Point(199, 129);
+            txtDesFileNamePath.Margin = new Padding(4);
             txtDesFileNamePath.Name = "txtDesFileNamePath";
             txtDesFileNamePath.PasswordChar = '\0';
             txtDesFileNamePath.PlaceholderText = "";
             txtDesFileNamePath.SelectedText = "";
             txtDesFileNamePath.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            txtDesFileNamePath.Size = new Size(581, 45);
+            txtDesFileNamePath.Size = new Size(726, 56);
             txtDesFileNamePath.TabIndex = 6;
             // 
             // tabPage7
@@ -510,9 +534,10 @@
             tabPage7.Controls.Add(txtKeyTripleDESFile);
             tabPage7.Controls.Add(txtTrtipleFilenamePath);
             tabPage7.Location = new Point(184, 4);
+            tabPage7.Margin = new Padding(4);
             tabPage7.Name = "tabPage7";
-            tabPage7.Padding = new Padding(3);
-            tabPage7.Size = new Size(949, 637);
+            tabPage7.Padding = new Padding(4);
+            tabPage7.Size = new Size(1233, 798);
             tabPage7.TabIndex = 7;
             tabPage7.Text = "Triple DES File";
             tabPage7.UseVisualStyleBackColor = true;
@@ -526,10 +551,11 @@
             btnTripleChooseFile.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnTripleChooseFile.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnTripleChooseFile.ForeColor = Color.White;
-            btnTripleChooseFile.Location = new Point(750, 88);
+            btnTripleChooseFile.Location = new Point(938, 110);
+            btnTripleChooseFile.Margin = new Padding(4);
             btnTripleChooseFile.Name = "btnTripleChooseFile";
             btnTripleChooseFile.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            btnTripleChooseFile.Size = new Size(125, 45);
+            btnTripleChooseFile.Size = new Size(156, 56);
             btnTripleChooseFile.TabIndex = 7;
             btnTripleChooseFile.Text = "Choose File";
             btnTripleChooseFile.Click += btnTripleChooseFile_Click;
@@ -543,12 +569,14 @@
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(750, 161);
+            guna2Button1.Location = new Point(938, 201);
+            guna2Button1.Margin = new Padding(4);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            guna2Button1.Size = new Size(125, 45);
+            guna2Button1.Size = new Size(156, 56);
             guna2Button1.TabIndex = 6;
             guna2Button1.Text = "Generate Key";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // btnTripleEncryptFile
             // 
@@ -559,10 +587,11 @@
             btnTripleEncryptFile.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnTripleEncryptFile.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnTripleEncryptFile.ForeColor = Color.White;
-            btnTripleEncryptFile.Location = new Point(451, 375);
+            btnTripleEncryptFile.Location = new Point(564, 469);
+            btnTripleEncryptFile.Margin = new Padding(4);
             btnTripleEncryptFile.Name = "btnTripleEncryptFile";
             btnTripleEncryptFile.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            btnTripleEncryptFile.Size = new Size(281, 52);
+            btnTripleEncryptFile.Size = new Size(351, 65);
             btnTripleEncryptFile.TabIndex = 5;
             btnTripleEncryptFile.Text = "Encrypt";
             btnTripleEncryptFile.Click += btnTripleEncryptFile_Click;
@@ -576,10 +605,11 @@
             btnTripleDecryptFile.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnTripleDecryptFile.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnTripleDecryptFile.ForeColor = Color.White;
-            btnTripleDecryptFile.Location = new Point(151, 375);
+            btnTripleDecryptFile.Location = new Point(189, 469);
+            btnTripleDecryptFile.Margin = new Padding(4);
             btnTripleDecryptFile.Name = "btnTripleDecryptFile";
             btnTripleDecryptFile.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            btnTripleDecryptFile.Size = new Size(294, 52);
+            btnTripleDecryptFile.Size = new Size(368, 65);
             btnTripleDecryptFile.TabIndex = 4;
             btnTripleDecryptFile.Text = "Decrypt";
             btnTripleDecryptFile.Click += btnTripleDecryptFile_Click;
@@ -587,18 +617,20 @@
             // guna2HtmlLabel12
             // 
             guna2HtmlLabel12.BackColor = Color.Transparent;
-            guna2HtmlLabel12.Location = new Point(69, 174);
+            guna2HtmlLabel12.Location = new Point(86, 218);
+            guna2HtmlLabel12.Margin = new Padding(4);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            guna2HtmlLabel12.Size = new Size(27, 22);
+            guna2HtmlLabel12.Size = new Size(31, 27);
             guna2HtmlLabel12.TabIndex = 3;
             guna2HtmlLabel12.Text = "Key";
             // 
             // guna2HtmlLabel11
             // 
             guna2HtmlLabel11.BackColor = Color.Transparent;
-            guna2HtmlLabel11.Location = new Point(69, 100);
+            guna2HtmlLabel11.Location = new Point(86, 125);
+            guna2HtmlLabel11.Margin = new Padding(4);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            guna2HtmlLabel11.Size = new Size(59, 22);
+            guna2HtmlLabel11.Size = new Size(69, 27);
             guna2HtmlLabel11.TabIndex = 2;
             guna2HtmlLabel11.Text = "File Path";
             // 
@@ -613,13 +645,14 @@
             txtKeyTripleDESFile.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtKeyTripleDESFile.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtKeyTripleDESFile.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtKeyTripleDESFile.Location = new Point(151, 161);
+            txtKeyTripleDESFile.Location = new Point(189, 201);
+            txtKeyTripleDESFile.Margin = new Padding(4);
             txtKeyTripleDESFile.Name = "txtKeyTripleDESFile";
             txtKeyTripleDESFile.PasswordChar = '\0';
             txtKeyTripleDESFile.PlaceholderText = "";
             txtKeyTripleDESFile.SelectedText = "";
             txtKeyTripleDESFile.ShadowDecoration.CustomizableEdges = customizableEdges36;
-            txtKeyTripleDESFile.Size = new Size(581, 45);
+            txtKeyTripleDESFile.Size = new Size(726, 56);
             txtKeyTripleDESFile.TabIndex = 1;
             // 
             // txtTrtipleFilenamePath
@@ -633,13 +666,14 @@
             txtTrtipleFilenamePath.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTrtipleFilenamePath.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTrtipleFilenamePath.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTrtipleFilenamePath.Location = new Point(151, 88);
+            txtTrtipleFilenamePath.Location = new Point(189, 110);
+            txtTrtipleFilenamePath.Margin = new Padding(4);
             txtTrtipleFilenamePath.Name = "txtTrtipleFilenamePath";
             txtTrtipleFilenamePath.PasswordChar = '\0';
             txtTrtipleFilenamePath.PlaceholderText = "";
             txtTrtipleFilenamePath.SelectedText = "";
             txtTrtipleFilenamePath.ShadowDecoration.CustomizableEdges = customizableEdges38;
-            txtTrtipleFilenamePath.Size = new Size(581, 45);
+            txtTrtipleFilenamePath.Size = new Size(726, 56);
             txtTrtipleFilenamePath.TabIndex = 0;
             // 
             // tabPage1
@@ -656,9 +690,10 @@
             tabPage1.Controls.Add(guna2HtmlLabel10);
             tabPage1.Controls.Add(txtTripleDecryptedText);
             tabPage1.Location = new Point(184, 4);
+            tabPage1.Margin = new Padding(4);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(949, 637);
+            tabPage1.Padding = new Padding(4);
+            tabPage1.Size = new Size(1233, 798);
             tabPage1.TabIndex = 8;
             tabPage1.Text = "Trible DES Text";
             tabPage1.UseVisualStyleBackColor = true;
@@ -672,10 +707,11 @@
             btnTripleEncrypt.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnTripleEncrypt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnTripleEncrypt.ForeColor = Color.White;
-            btnTripleEncrypt.Location = new Point(746, 559);
+            btnTripleEncrypt.Location = new Point(932, 699);
+            btnTripleEncrypt.Margin = new Padding(4);
             btnTripleEncrypt.Name = "btnTripleEncrypt";
             btnTripleEncrypt.ShadowDecoration.CustomizableEdges = customizableEdges40;
-            btnTripleEncrypt.Size = new Size(171, 46);
+            btnTripleEncrypt.Size = new Size(214, 58);
             btnTripleEncrypt.TabIndex = 44;
             btnTripleEncrypt.Text = "Encrypt";
             btnTripleEncrypt.Click += btnTripleEncrypt_Click;
@@ -689,10 +725,11 @@
             btnTripleDecrypt.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnTripleDecrypt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnTripleDecrypt.ForeColor = Color.White;
-            btnTripleDecrypt.Location = new Point(574, 559);
+            btnTripleDecrypt.Location = new Point(718, 699);
+            btnTripleDecrypt.Margin = new Padding(4);
             btnTripleDecrypt.Name = "btnTripleDecrypt";
             btnTripleDecrypt.ShadowDecoration.CustomizableEdges = customizableEdges42;
-            btnTripleDecrypt.Size = new Size(171, 46);
+            btnTripleDecrypt.Size = new Size(214, 58);
             btnTripleDecrypt.TabIndex = 43;
             btnTripleDecrypt.Text = "Decrypt";
             btnTripleDecrypt.Click += btnTripleDecrypt_Click;
@@ -708,22 +745,24 @@
             txtTripleEncryptedText.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTripleEncryptedText.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTripleEncryptedText.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTripleEncryptedText.Location = new Point(151, 270);
+            txtTripleEncryptedText.Location = new Point(189, 338);
+            txtTripleEncryptedText.Margin = new Padding(4);
             txtTripleEncryptedText.Multiline = true;
             txtTripleEncryptedText.Name = "txtTripleEncryptedText";
             txtTripleEncryptedText.PasswordChar = '\0';
             txtTripleEncryptedText.PlaceholderText = "";
             txtTripleEncryptedText.SelectedText = "";
             txtTripleEncryptedText.ShadowDecoration.CustomizableEdges = customizableEdges44;
-            txtTripleEncryptedText.Size = new Size(766, 111);
+            txtTripleEncryptedText.Size = new Size(958, 139);
             txtTripleEncryptedText.TabIndex = 42;
             // 
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(31, 422);
+            guna2HtmlLabel3.Location = new Point(39, 528);
+            guna2HtmlLabel3.Margin = new Padding(4);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(104, 22);
+            guna2HtmlLabel3.Size = new Size(122, 27);
             guna2HtmlLabel3.TabIndex = 41;
             guna2HtmlLabel3.Text = "Decrypted Text";
             // 
@@ -736,19 +775,22 @@
             guna2Button8.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             guna2Button8.ForeColor = Color.White;
-            guna2Button8.Location = new Point(412, 41);
+            guna2Button8.Location = new Point(515, 51);
+            guna2Button8.Margin = new Padding(4);
             guna2Button8.Name = "guna2Button8";
             guna2Button8.ShadowDecoration.CustomizableEdges = customizableEdges46;
-            guna2Button8.Size = new Size(119, 36);
+            guna2Button8.Size = new Size(149, 45);
             guna2Button8.TabIndex = 40;
             guna2Button8.Text = "Generate Key";
+            guna2Button8.Click += guna2Button8_Click;
             // 
             // guna2HtmlLabel4
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Location = new Point(31, 41);
+            guna2HtmlLabel4.Location = new Point(39, 51);
+            guna2HtmlLabel4.Margin = new Padding(4);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(27, 22);
+            guna2HtmlLabel4.Size = new Size(31, 27);
             guna2HtmlLabel4.TabIndex = 39;
             guna2HtmlLabel4.Text = "Key";
             // 
@@ -763,13 +805,14 @@
             txtTripleKey.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTripleKey.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTripleKey.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTripleKey.Location = new Point(151, 41);
+            txtTripleKey.Location = new Point(189, 51);
+            txtTripleKey.Margin = new Padding(4);
             txtTripleKey.Name = "txtTripleKey";
             txtTripleKey.PasswordChar = '\0';
             txtTripleKey.PlaceholderText = "";
             txtTripleKey.SelectedText = "";
             txtTripleKey.ShadowDecoration.CustomizableEdges = customizableEdges48;
-            txtTripleKey.Size = new Size(242, 36);
+            txtTripleKey.Size = new Size(302, 45);
             txtTripleKey.TabIndex = 38;
             // 
             // txtTriplePlainText
@@ -783,31 +826,34 @@
             txtTriplePlainText.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTriplePlainText.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTriplePlainText.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTriplePlainText.Location = new Point(151, 118);
+            txtTriplePlainText.Location = new Point(189, 148);
+            txtTriplePlainText.Margin = new Padding(4);
             txtTriplePlainText.Multiline = true;
             txtTriplePlainText.Name = "txtTriplePlainText";
             txtTriplePlainText.PasswordChar = '\0';
             txtTriplePlainText.PlaceholderText = "";
             txtTriplePlainText.SelectedText = "";
             txtTriplePlainText.ShadowDecoration.CustomizableEdges = customizableEdges50;
-            txtTriplePlainText.Size = new Size(766, 111);
+            txtTriplePlainText.Size = new Size(958, 139);
             txtTriplePlainText.TabIndex = 37;
             // 
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Location = new Point(31, 118);
+            guna2HtmlLabel5.Location = new Point(39, 148);
+            guna2HtmlLabel5.Margin = new Padding(4);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(67, 22);
+            guna2HtmlLabel5.Size = new Size(77, 27);
             guna2HtmlLabel5.TabIndex = 35;
             guna2HtmlLabel5.Text = "Plain Text";
             // 
             // guna2HtmlLabel10
             // 
             guna2HtmlLabel10.BackColor = Color.Transparent;
-            guna2HtmlLabel10.Location = new Point(31, 270);
+            guna2HtmlLabel10.Location = new Point(39, 338);
+            guna2HtmlLabel10.Margin = new Padding(4);
             guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            guna2HtmlLabel10.Size = new Size(101, 22);
+            guna2HtmlLabel10.Size = new Size(119, 27);
             guna2HtmlLabel10.TabIndex = 36;
             guna2HtmlLabel10.Text = "Encrypted Text";
             // 
@@ -822,14 +868,15 @@
             txtTripleDecryptedText.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTripleDecryptedText.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTripleDecryptedText.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTripleDecryptedText.Location = new Point(151, 422);
+            txtTripleDecryptedText.Location = new Point(189, 528);
+            txtTripleDecryptedText.Margin = new Padding(4);
             txtTripleDecryptedText.Multiline = true;
             txtTripleDecryptedText.Name = "txtTripleDecryptedText";
             txtTripleDecryptedText.PasswordChar = '\0';
             txtTripleDecryptedText.PlaceholderText = "";
             txtTripleDecryptedText.SelectedText = "";
             txtTripleDecryptedText.ShadowDecoration.CustomizableEdges = customizableEdges52;
-            txtTripleDecryptedText.Size = new Size(766, 111);
+            txtTripleDecryptedText.Size = new Size(958, 139);
             txtTripleDecryptedText.TabIndex = 34;
             // 
             // openFileDialog1
@@ -838,10 +885,11 @@
             // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1137, 645);
+            ClientSize = new Size(1421, 806);
             Controls.Add(guna2TabControl1);
+            Margin = new Padding(4);
             Name = "Home";
             Text = "Home";
             guna2TabControl1.ResumeLayout(false);

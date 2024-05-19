@@ -6,6 +6,15 @@ namespace HybridEncryption_BusinessLayer
 {
     public class clsTribleDES
     {
+        public static string genrateKey()
+        {
+            using (var rng = new RNGCryptoServiceProvider())
+            {
+                byte[] key = new byte[18];
+                rng.GetBytes(key);
+                return Convert.ToBase64String(key);
+            }
+        }
         public static string EncryptText(string plainText, string key)
         {
 
