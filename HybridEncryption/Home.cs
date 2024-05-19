@@ -55,7 +55,7 @@ public partial class Home : Form
             saveFileDialog1.DefaultExt = Path.GetExtension(openFileDialog1.FileName);
             saveFileDialog1.Filter = "All Files (*.*)|*.*";
             saveFileDialog1.ShowDialog();
-            clsDES.DecryptFile(txtDesFileNamePath.Text, saveFileDialog1.FileName, txtKeyDesFile.Text);
+            clsDES.EncryptFile(txtDesFileNamePath.Text, saveFileDialog1.FileName, txtKeyDesFile.Text);
             MessageBox.Show("Decrypt done");
         }
         catch (Exception ex)
@@ -74,7 +74,7 @@ public partial class Home : Form
             saveFileDialog1.Filter = "All Files (*.*)|*.*";
             saveFileDialog1.ShowDialog();
 
-            clsTribleDES.DecryptFile(txtDesFileNamePath.Text, saveFileDialog1.FileName, txtKeyDesFile.Text);
+            clsDES.DecryptFile(txtDesFileNamePath.Text, saveFileDialog1.FileName, txtKeyDesFile.Text);
 
             MessageBox.Show("Decrypt done");
         }
