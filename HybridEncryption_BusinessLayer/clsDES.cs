@@ -84,18 +84,18 @@ namespace HybridEncryption_BusinessLayer
                         try
                         {
 
-                        int decryptedByteCount = cryptoStream.Read(cipherTextBytes, 0, cipherTextBytes.Length);
-                        // Handle incomplete decryption (optional)
-                        if (decryptedByteCount != memoryStream.Length)
-                        {
-                            throw new CryptographicException("Decryption failed: Invalid ciphertext or corrupt data.");
-                        return Encoding.UTF8.GetString(cipherTextBytes, 0, decryptedByteCount);
-                        }
+                            int decryptedByteCount = cryptoStream.Read(cipherTextBytes, 0, cipherTextBytes.Length);
+                            // Handle incomplete decryption (optional)
+                            if (decryptedByteCount != memoryStream.Length)
+                            {
+                                throw new CryptographicException("Decryption failed: Invalid ciphertext or corrupt data.");
+                                return Encoding.UTF8.GetString(cipherTextBytes, 0, decryptedByteCount);
+                            }
                         }
                         catch (Exception)
                         {
 
-                            
+
                         }
 
                         return "";
@@ -103,7 +103,59 @@ namespace HybridEncryption_BusinessLayer
                 }
             }
         }
+
+
+
+        // des file ----------------
+
+
+
+        public static void EncryptFile(string inputFilePath, string outputFilePath, byte[] key)
+        {
+            using (var aes = Aes.Create())
+            {
+                aes.Key = key;
+                aes.Mode = CipherMode.ECB;
+                aes.Padding = PaddingMode.PKCS7;
+
+                using (var encryptor = aes.CreateEncryptor())
+                using (var inputFileStream = new FileStream(inputFilePath, FileMode.Open))
+                using (var outputFileStream = new FileStream(outputFilePath, FileMode.Create))
+                {
+                    var buffer = new byte[4096];
+                    int bytesRead;
+
+                    while ((bytesRead = inputFileStream.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        var encryptedBytes = encryptor.TransformFinalBlock(buffer, 0, bytesRead);
+                        outputFileStream.Write(encryptedBytes, 0, encryptedBytes.Length);
+                    }
+                }
+            }
+        }
+
+        public static void DecryptFile(string inputFilePath, string outputFilePath, byte[] key)
+        {
+            using (var aes = Aes.Create())
+            {
+                aes.Key = key;
+                aes.Mode = CipherMode.ECB;
+                aes.Padding = PaddingMode.PKCS7;
+
+                using (var decryptor = aes.CreateDecryptor())
+                using (var inputFileStream = new FileStream(inputFilePath, FileMode.Open))
+                using (var outputFileStream = new FileStream(outputFilePath, FileMode.Create))
+                {
+                    var buffer = new byte[4096];
+                    int bytesRead;
+
+                    while ((bytesRead = inputFileStream.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        var decryptedBytes = decryptor.TransformFinalBlock(buffer, 0, bytesRead);
+                        outputFileStream.Write(decryptedBytes, 0, decryptedBytes.Length);
+                    }
+                }
+            }
+        }
     }
-
-
 }
